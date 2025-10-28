@@ -46,13 +46,13 @@ class DigitalPet:
             self.energy += 4
             self.hunger += 1
             print(f"💤 {self.name} крепко спит...")
-            time.sleep(2) # Небольшая пауза для эффекта
+            time.sleep(2)
             self._clamp_stats()
 
     def status(self):
         """Выводит текущее состояние питомца"""
         if not self.is_alive:
-            return f"{self.name} больше нет с нами... 💀"
+            return f"{self.name} больше нет с нами💀"
         
         hunger_bar = "🟥" * int(self.hunger) + "⬜" * (10 - int(self.hunger))
         happy_bar = "🟩" * int(self.happiness) + "⬜" * (10 - int(self.happiness))
@@ -90,13 +90,14 @@ if __name__ == "__main__":
         elif choice == '3':
             pet.sleep()
         elif choice == '4':
-            print("Время passes by...")
+            print("Время passes by")
         else:
             print("Неверный ввод.")
 
         pet.pass_time()
-        input("\nНажмите Enter, чтобы продолжить...")
+        input("\nНажмите Enter, чтобы продолжить")
 
     clear_screen()
     print(pet.status())
-    print("Игра окончена.")
+
+    print("Игра окончена")
