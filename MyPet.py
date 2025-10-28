@@ -11,13 +11,13 @@ class DigitalPet:
         self.is_alive = True
 
     def _clamp_stats(self):
-        """Убеждается, что все показатели в пределах от 0 до 10."""
+        """Убеждается что все показатели в пределах от 0 до 10"""
         self.hunger = max(0, min(10, self.hunger))
         self.happiness = max(0, min(10, self.happiness))
         self.energy = max(0, min(10, self.energy))
 
     def pass_time(self):
-        """Время проходит, показатели меняются."""
+        """Время проходит показатели меняются"""
         self.hunger += 1
         self.happiness -= 0.5
         self.energy -= 1
@@ -95,9 +95,10 @@ if __name__ == "__main__":
             print("Неверный ввод.")
 
         pet.pass_time()
-        input("\nНажмите Enter, чтобы продолжить")
+        input("\nНажмите Enter чтобы продолжить")
 
     clear_screen()
     print(pet.status())
 
     print("Игра окончена")
+
