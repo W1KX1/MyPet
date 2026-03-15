@@ -1,2 +1,2 @@
-1# MyPet
-May not work properly, interface only in Russian, this is just a test
+1# MyPetqweeqweqw
+May not work properqwqweqwly, interface only in Russian, this is just a test
