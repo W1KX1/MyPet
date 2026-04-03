@@ -1,3 +1,4 @@
+ # для первого раза сойдет
 import random
 import time
 import os
